@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Veículos do Rodolfera</title>
+    </head>
+    <body>
+        <h2>Procurar veículos:</h2>
+        <form action = "#" method="POST">
+            <input type="text" id="codigo" name="codigo">
+            <input type="button" value="Pesquisar" onclick="getCodVeic()">
+        </form>
+        <hr>
+        <h2>Inserir veículos</h2>
+        <form action ="#" id="frm_veiculos">
+            <input type="text" name="codigo_veic" id="codigo_veic" placeholder="Código: " readonly><br>
+            <input type="text" name="proprietario" id="proprietario" placeholder="Proprietário: "><br>
+            <input type="text" name="modelo" id="modelo" placeholder="Modelo: "><br>
+            <input type="text" name="marca" id="marca" placeholder="Marca: "><br>
+            <input type="text" name="cor" id="cor" placeholder="Cor: "><br>
+            <input type="text" name="vendido" id="vendido" placeholder="Vendido - Sim ou Não "><br>
+            <input type="button" value="Inserir" onclick="inserirVeiculo()">
+            <input type="button" value="Atualizar" onclick="atualizarVeiculo()">
+            <input type="button" value="Limpar" onclick="limpar()">
+        </form>
+        <hr>
+        <h2>Resultado:</h2>
+        <div id="resultado"></div>
+        <script src="js/ajax.js"></script>
+        <script src="js/jquery.js" type="text/javascript"></script>
+    </body>
+</html>
